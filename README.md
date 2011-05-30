@@ -32,8 +32,11 @@ Example code:
 Note that all the package does is confirm that the IPN message is valid. After this, you will still need to make some more checks:
 
 > Confirm that the payment status is Completed.
+
 > Use the transaction ID to verify that the transaction has not already been processed, which prevents duplicate transactions from being processed.
+
 > Validate that the receivers email address is registered to you.
+
 > Verify that the price, item description, and so on, match the transaction on your website.
 
 You can find more information on the [Paypal documentation for IPN](https://cms.paypal.com/cgi-bin/marketingweb?cmd=_render-content&content_ID=developer/e_howto_admin_IPNIntro).
