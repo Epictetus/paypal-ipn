@@ -55,4 +55,6 @@ If `err` was false, then `msg` will always be `VERIFIED`.
 
 All you need to do is pass in the request parameters to `ipn.verify`.
 
-In ExpressJS, the request parameters are in `req.body`.
+In ExpressJS, the request parameters are in `req.body`:
+
+    ipn.verify(req.body, callback_function);
